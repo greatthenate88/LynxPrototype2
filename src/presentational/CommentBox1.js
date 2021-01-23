@@ -5,11 +5,14 @@ import FABULOUS from './images/FABULOUS.jpg';
 
 const Comment = styled.div`
     border-width:1px;
-    border-style:none double double none;
+    border-style:none none double none;
     border-color:#008d8e;
     padding-top:5px;
     width:90%;
-    margin:auto;
+    margin-top:auto;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:1rem;
     .title{
         margin-right:5px;
         height:20%;
