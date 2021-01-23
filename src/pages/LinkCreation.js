@@ -7,18 +7,19 @@ import LinkCard2 from '../presentational/LinkCard2';
 import DNA from '../presentational/DNA';
 import CommentBox1 from '../presentational/CommentBox1';
 
+
 export default function Links(props) {
     return (
 
         <Container>
             <Row>
-<Col><LinkCard1></LinkCard1><SearchBox></SearchBox></Col>
+{/*Col DNA and Col will be LinkSearchBox container*/}<Col><LinkCard1></LinkCard1><SearchBox></SearchBox></Col>
 <DNA></DNA>
 <Col><LinkCard2></LinkCard2><SearchBox></SearchBox></Col>
             </Row>
             <br/>
             <Row>
-                <CommentBox1></CommentBox1>
+{/*Comment Boxes will be Comment Section container*/}<CommentBox1></CommentBox1>
             </Row>
         </Container>
         );

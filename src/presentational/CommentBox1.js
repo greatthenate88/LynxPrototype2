@@ -40,12 +40,13 @@ const Comment = styled.div`
         width:45px;
         margin-right:10px;
         margin-top:5px;
-    /*@media (max-width: 1px) {
+
+    }
+    @media (max-width: 1px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
-  }*/
-    }
+  }
 `;
 
 export const CommentBox1 = (props) => {
