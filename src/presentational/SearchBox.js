@@ -19,6 +19,7 @@ const SearchButton = styled.button`
     border-radius:10px;
     border-color:skyblue;
     background-color:whitesmoke;
+    color:#003a41;
     .icon1{
         padding-bottom:5px;
         height:100%;
