@@ -20,7 +20,6 @@ const Comment = styled.div`
         height:20%;
         width:100px;
         padding-left:5px;
-        border-right:1px solid #d1efff;
         display:flex;
     }
     .words{
@@ -33,7 +32,8 @@ const Comment = styled.div`
         margin:30px;
     }
     .UN{
-        display:inline-block;
+        display:inline-block;        
+        border-right:1px solid #d1efff;
     }
     img{
         border:1px solid #d1efff;
@@ -66,7 +66,7 @@ const Comment = styled.div`
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
-  } (not sure if this will work for intentions)*/
+  } (not sure if @media will work for intentions)*/
 `;
 
 const element = <FontAwesomeIcon icon={faComment} />

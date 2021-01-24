@@ -13,12 +13,17 @@ const Comment = styled.div`
     margin-right:auto;
     margin-left:auto;
     margin-bottom:1rem;
+    a{
+        color:black;
+    }
+    a:hover{
+    color:#003a41;
+    }
     .title{
         margin-right:5px;
         height:20%;
         width:100px;
         padding-left:5px;
-        border-right:1px solid #d1efff;
         display:flex;
     }
     .words{
@@ -31,7 +36,9 @@ const Comment = styled.div`
         margin:30px;
     }
     .UN{
-        display:inline-block;
+        display:inline-block;        
+        border-right:1px solid #d1efff;
+        padding-right:5px;
     }
     img{
         border:1px solid #d1efff;
@@ -55,7 +62,7 @@ export const CommentBox1 = (props) => {
             <Row>
         <Comment>
             <div class="title">
-                <div class="UN">Username
+                <div class="UN"><a href="/Links">ElvishPiper420</a>
                 <img alt="profilepic" src={FABULOUS}/>
                 </div>
             </div>
