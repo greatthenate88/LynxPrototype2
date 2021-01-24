@@ -45,7 +45,7 @@ const Comment = styled.div`
 
     }
     input{
-        width:96%;
+        width:95%;
         border-style:inset;
         border-width:1px;
         border-color:whitesmoke;
@@ -54,12 +54,12 @@ const Comment = styled.div`
         padding-left:5px;
     }
     button{
-        width:auto;
-        color:#009fa8;
-        background-color:#deeaf5;
+        width:5%;
+        border-color:skyblue;
+        background-color:whitesmoke;
+        color:#003a41;
         border-style:outset;
         border-width:.07rem;
-        border-color:whitesmoke;
         border-radius:5px;
     }
    /* @media (max-width: 1px) {

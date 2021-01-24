@@ -9,7 +9,7 @@ const Nav = styled.nav`
   border-bottom: 2px solid #f1f1f1;
   padding: 0 25px;
   display: flex;
-  background-image: linear-gradient(45deg, whitesmoke, #009fa8);
+  background-image: linear-gradient(45deg, whitesmoke, #6bc7da);
   font-weight:bold;
   color:#006bbf;
   justify-content: space-between;

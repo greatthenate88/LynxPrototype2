@@ -16,7 +16,7 @@ const CustomFooter = styled.footer`
   border-top: 2px solid #f1f1f1;
   padding: 0 25px;
   display: flex;
-  background-image: linear-gradient(235deg, whitesmoke, #009fa8);
+  background-image: linear-gradient(235deg, whitesmoke, #6bc7da);
   font-weight:bold;
   color:#006bbf;
   justify-content:center;
