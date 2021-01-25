@@ -7,12 +7,17 @@ import LinkCard2 from '../presentational/LinkCard2';
 import DNA from '../presentational/DNA';
 import CommentBox1 from '../presentational/CommentBox1';
 import CommentBox2 from '../presentational/CommentBox2';
+import useMTGSDK from '../hooks/useMTGSDK';
+import LinkSearchBox from '../containers/LinkSearchBox';
 
 
 export default function Links(props) {
+    const test= useMTGSDK('Shock');
+    console.log(test);
+  
     return (
-
         <Container>
+            <LinkSearchBox></LinkSearchBox>
             <Row>
 {/*Col DNA and Col will be LinkSearchBox container*/}<Col><LinkCard1></LinkCard1><SearchBox></SearchBox></Col>
 <DNA></DNA>

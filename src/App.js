@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Home from './pages/Home';
 import SignIn from './pages/SignIn';
@@ -6,18 +7,21 @@ import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import Navibar from './presentational/NaviBar';
 import Footer from './presentational/Footer'
 
+const loginState = { loggedIn: false };
+const LoginContext = React.createContext(loginState.loggedIn);
+
 function App() {
   return (
     <div className="App">
-
-<Router>
-    <Navibar></Navibar>
-    <Route exact path="/" component={Home}></Route>
-    <Route  path="/SignIn" component={SignIn}></Route>
-    <Route  path="/Links" component={LinkCreation}></Route>
-    <Footer></Footer>
-</Router>
-
+<LoginContext.Provider>
+    <Router>
+        <Navibar></Navibar>
+          <Route exact path="/" component={Home}></Route>
+          <Route  path="/signin" component={SignIn}></Route>
+          <Route  path="/createlink" component={LinkCreation}></Route>
+        <Footer></Footer>
+    </Router>
+</LoginContext.Provider>
 
     </div>
   );
