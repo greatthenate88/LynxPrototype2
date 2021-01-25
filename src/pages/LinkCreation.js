@@ -19,16 +19,22 @@ export default function Links(props) {
         <Container>
             <LinkSearchBox></LinkSearchBox>
             <Row>
-{/*Col DNA and Col will be LinkSearchBox container*/}<Col><LinkCard1></LinkCard1><SearchBox></SearchBox></Col>
-<DNA></DNA>
-<Col><LinkCard2></LinkCard2><SearchBox></SearchBox></Col>
+                <Col>
+                    <LinkCard1></LinkCard1>
+                    <SearchBox></SearchBox>
+                </Col>
+                <DNA></DNA>
+                <Col>
+                    <LinkCard2></LinkCard2>
+                    <SearchBox></SearchBox>
+                </Col>
             </Row>
             <br/>
             <Row>
-{/*Comment Boxes will be Comment Section container*/}<CommentBox1></CommentBox1>
+                <CommentBox1></CommentBox1>
             </Row>
             <Row>
-{/*Comment Boxes will be Comment Section container*/}<CommentBox2></CommentBox2>
+                <CommentBox2></CommentBox2>
             </Row>
         </Container>
         );
