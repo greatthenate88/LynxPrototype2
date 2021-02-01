@@ -43,7 +43,7 @@ const element = <FontAwesomeIcon icon={faDna} />
 const DNA = (props) => {
     return (
     <Link>
-        <FontAwesomeIcon class="dna" icon={faDna}/>
+        <FontAwesomeIcon className="dna" icon={faDna}/>
     </Link>
     )
   }

@@ -34,7 +34,7 @@ const SearchBox = (props) => {
         <input type="search">
 
         </input>
-        <SearchButton type="submit"><FontAwesomeIcon class="icon1"  icon={faSearch}/></SearchButton>
+        <SearchButton type="submit"><FontAwesomeIcon className="icon1"  icon={faSearch}/></SearchButton>
         </Searchy>
         </div>
     )

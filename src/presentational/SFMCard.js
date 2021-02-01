@@ -77,9 +77,9 @@ export const SFMCard = (props) => {
       <SFM href="/">  
         <Card>
 
-          <img alt="sfmimg" src={sfm} class="image"/>
-          <div class="overlay">
-            <div class="text">
+          <img alt="sfmimg" src={sfm} className="image"/>
+          <div className="overlay">
+            <div className="text">
             <h4>The Argument for Stoneforge Mystic in Standard 
                12/1 | by MTGLynx</h4>
             sTOnEfoRGe WoNt bE bROkeN iF THe EqUiPMentS ARe BaD :^)

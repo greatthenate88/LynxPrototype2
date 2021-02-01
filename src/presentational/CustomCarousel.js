@@ -40,12 +40,12 @@ position:sticky;
 export const CustomCarousel = (props) => {
     return (
     <TheCarousel>
-    <div class="Carousel">
+    <div className="Carousel">
 
 <Carousel>
   <Carousel.Item>
     <img
-      class="magicslide"
+      className="magicslide"
       height='90%'
       width="90%"
       padding='10px'
@@ -66,7 +66,7 @@ export const CustomCarousel = (props) => {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      class="slidethree"
+      className="slidethree"
       height="90%"
       src={lynx}
       alt="Third slide"

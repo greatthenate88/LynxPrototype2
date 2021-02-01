@@ -43,14 +43,14 @@ return (
                 <Col>
                 <form>
                     <h1>Sign In</h1> 
-                    <label class='UN'>Username:</label>
-                    <input placeholder="Username"  class='FormBox1' type='text'></input>
+                    <label className='UN'>Username:</label>
+                    <input placeholder="Username"  className='FormBox1' type='text'></input>
                     <br/>
-                    <label class='PW'>Password:</label>
-                    <input placeholder="Password" class='FormBox1' type='text'></input>
+                    <label className='PW'>Password:</label>
+                    <input placeholder="Password" className='FormBox1' type='text'></input>
                     <br/>
                     <br/>
-                    <button class='FormButton1'><a href="/" class="SI">Sign In!</a></button>
+                    <button className='FormButton1'><a href="/" className="SI">Sign In!</a></button>
                 </form>
                 </Col>    
             </Row>    

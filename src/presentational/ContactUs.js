@@ -52,9 +52,9 @@ export const ContactUs = (props) => {
     return (
     <div>
         <DropdownContainer>
-    <div class="dropdown">
+    <div className="dropdown">
         <p>Contact Us</p>
-        <div class="dropdown-content">
+        <div className="dropdown-content">
             <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faFacebook} /></a>
             <a href="https://twitter.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faTwitter}/></a>
             <a href="https://discord.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faDiscord}/></a>
