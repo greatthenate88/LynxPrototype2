@@ -13,7 +13,7 @@ const LoginContext = React.createContext(loginState.loggedIn);
 function App() {
   return (
     <div className="App">
-<LoginContext.Provider>
+<LoginContext.Provider value={loginState.loggedIn}>
     <Router>
         <Navibar></Navibar>
           <Route exact path="/" component={Home}></Route>

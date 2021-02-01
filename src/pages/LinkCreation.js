@@ -12,24 +12,12 @@ import LinkSearchBox from '../containers/LinkSearchBox';
 
 
 export default function Links(props) {
-    const test= useMTGSDK('Shock');
-    console.log(test);
+    //const test= useMTGSDK('Shock');
+    //console.log(test);
   
     return (
         <Container>
             <LinkSearchBox></LinkSearchBox>
-            <Row>
-{/*Col DNA and Col will be LinkSearchBox container*/}<Col><LinkCard1></LinkCard1><SearchBox></SearchBox></Col>
-<DNA></DNA>
-<Col><LinkCard2></LinkCard2><SearchBox></SearchBox></Col>
-            </Row>
-            <br/>
-            <Row>
-{/*Comment Boxes will be Comment Section container*/}<CommentBox1></CommentBox1>
-            </Row>
-            <Row>
-{/*Comment Boxes will be Comment Section container*/}<CommentBox2></CommentBox2>
-            </Row>
         </Container>
         );
     }

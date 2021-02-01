@@ -13,7 +13,6 @@ const useMTGSDK = (cardName) => {
                 setOutput(cards[0]);
                 //console.log(output); // {name:"Squee, Goblin Nabob"...}
                 //console.log(cards[0].name); // "Keranos, God of Storms"
-               
             })  
 
         return output;

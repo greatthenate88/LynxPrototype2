@@ -21,7 +21,7 @@ const LC1 = styled.div`
 export const LinkCard1 = (props) => {
     return (
              <LC1>
-                 <img alt="imageresult1" src={manadrain}/>
+                 <img alt="imageresult1" src={props.image}/>
             </LC1>
     );
 }
