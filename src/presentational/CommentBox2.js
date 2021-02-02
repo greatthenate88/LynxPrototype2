@@ -75,12 +75,12 @@ export const CommentBox1 = (props) => {
         <Container>
             <Row>
         <Comment>
-            <div class="title">
-                <div class="UN">Username
+            <div className="title">
+                <div className="UN">Username
                 <img alt="profilepic" src={FABULOUS}/>
                 </div>
             </div>
-            <div class="words">
+            <div className="words">
                 <input placeholder="Share your thoughts!"></input>
                 <button><FontAwesomeIcon icon={faComment}/></button>
             </div>

@@ -21,7 +21,6 @@ const SearchButton = styled.button`
     background-color:whitesmoke;
     color:#003a41;
     .icon1{
-        padding-bottom:5px;
         height:100%;
     }
 `;
@@ -39,7 +38,7 @@ const SearchBox = (props) => {
         >
 
         </input>
-        <SearchButton type="submit"><FontAwesomeIcon class="icon1"  icon={faSearch}/></SearchButton>
+        <SearchButton type="submit"><FontAwesomeIcon className="icon1"  icon={faSearch}/></SearchButton>
         </Searchy>
         </div>
     )

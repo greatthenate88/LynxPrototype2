@@ -61,12 +61,12 @@ export const CommentBox1 = (props) => {
         <Container>
             <Row>
         <Comment>
-            <div class="title">
-                <div class="UN"><a href="/Links">ElvishPiper420</a>
+            <div className="title">
+                <div className="UN"><a href="/Links">ElvishPiper420</a>
                 <img alt="profilepic" src={FABULOUS}/>
                 </div>
             </div>
-            <div class="words">Tenetur dolores nostrum rerum et. Ratione quis quaerat vitae. Consequatur assumenda qui reprehenderit sit. Aliquam explicabo nobis rerum quia.</div>
+            <div className="words">Tenetur dolores nostrum rerum et. Ratione quis quaerat vitae. Consequatur assumenda qui reprehenderit sit. Aliquam explicabo nobis rerum quia.</div>
         </Comment>
             </Row>
         </Container>
