@@ -54,7 +54,7 @@ const UserProfile = styled.div`
 `;
 
 
-export default function Home(props) {
+export default function ProfilePage(props) {
   return (
     <UserProfile>
         

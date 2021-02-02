@@ -6,6 +6,7 @@ import LinkCreation from './pages/LinkCreation';
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import Navibar from './presentational/NaviBar';
 import Footer from './presentational/Footer'
+import ProfilePage from './pages/ProfilePage';
 
 const loginState = { loggedIn: false };
 const LoginContext = React.createContext(loginState.loggedIn);
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/" component={Home}></Route>
           <Route  path="/signin" component={SignIn}></Route>
           <Route  path="/createlink" component={LinkCreation}></Route>
+          <Route path="/profile" component={ProfilePage}></Route>
         <Footer></Footer>
     </Router>
 </LoginContext.Provider>
