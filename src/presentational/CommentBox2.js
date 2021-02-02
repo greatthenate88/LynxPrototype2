@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Row, Container} from 'react-bootstrap';
-import FABULOUS from './images/FABULOUS.jpg';
+import sfm from './images/sfm.jpg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faComment} from '@fortawesome/free-solid-svg-icons';
 
@@ -10,6 +10,7 @@ const Comment = styled.div`
     border-style:none none double none;
     border-color:#008d8e;
     padding-top:5px;
+    padding-bottom:2px;
     width:90%;
     margin-top:auto;
     margin-right:auto;
@@ -17,8 +18,8 @@ const Comment = styled.div`
     margin-bottom:1rem;
     .title{
         margin-right:5px;
-        height:20%;
-        width:100px;
+        height:10%;
+        width:15%;
         padding-left:5px;
         display:flex;
     }
@@ -29,20 +30,21 @@ const Comment = styled.div`
         width:80%;
         text-align:left;
         padding:3px;
-        margin:30px;
+        margin-top:30px;
     }
     .UN{
         display:inline-block;        
         border-right:1px solid #d1efff;
+        padding-right:7px;
+        padding-left:5px;
     }
     img{
         border:1px solid #d1efff;
-        border-radius:1.5rem;
-        height:35px;
-        width:45px;
+        border-radius:50%;
+        height:45px;
+        width:48px;
         margin-right:10px;
         margin-top:5px;
-
     }
     input{
         width:95%;
@@ -55,13 +57,16 @@ const Comment = styled.div`
     }
     button{
         width:5%;
+        min-width:35px;
         border-color:skyblue;
         background-color:whitesmoke;
         color:#003a41;
         border-style:outset;
         border-width:.07rem;
         border-radius:5px;
+        font-size:100%;
     }
+
    /* @media (max-width: 1px) {
     display: flex;
     justify-content: space-around;
@@ -76,8 +81,8 @@ export const CommentBox1 = (props) => {
             <Row>
         <Comment>
             <div className="title">
-                <div className="UN">Username
-                <img alt="profilepic" src={FABULOUS}/>
+                <div className="UN">ICantBlockWarriors
+                <img alt="profilepic" src={sfm}/>
                 </div>
             </div>
             <div className="words">
