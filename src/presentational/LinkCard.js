@@ -4,7 +4,7 @@ import {Card} from 'react-bootstrap'
 import manadrain from './images/manadrain.png'
 
 
-const LC1 = styled.div`
+const LC = styled.div`
     border-color:#009999;
     border-width:1px;
     border-style:solid;
@@ -18,11 +18,11 @@ const LC1 = styled.div`
     display:inline-block;
 `;
 
-export const LinkCard1 = (props) => {
+export const LinkCard = (props) => {
     return (
-             <LC1>
+             <LC>
                  <img alt="imageresult1" src={props.image}/>
-            </LC1>
+            </LC>
     );
 }
-    export default LinkCard1;
+    export default LinkCard;

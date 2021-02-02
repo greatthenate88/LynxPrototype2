@@ -27,11 +27,16 @@ const SearchButton = styled.button`
 `;
 
 const element = <FontAwesomeIcon icon={faSearch} />
+
 const SearchBox = (props) => {
     return (
         <div>
         <Searchy>
-        <input type="search">
+        <input type={props.type}
+        placeholder={props.placeholder}
+        value={props.value}
+        onChange={props.onChange}
+        >
 
         </input>
         <SearchButton type="submit"><FontAwesomeIcon class="icon1"  icon={faSearch}/></SearchButton>

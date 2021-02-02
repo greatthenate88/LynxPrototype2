@@ -2,8 +2,6 @@ import React from 'react';
 import {Row, Col, Container, Card, Carousel} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import SearchBox from '../presentational/SearchBox';
-import LinkCard1 from '../presentational/LinkCard1';
-import LinkCard2 from '../presentational/LinkCard2';
 import DNA from '../presentational/DNA';
 import CommentBox1 from '../presentational/CommentBox1';
 import CommentBox2 from '../presentational/CommentBox2';
