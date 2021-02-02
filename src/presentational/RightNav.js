@@ -38,7 +38,8 @@ const RightNav = ({ open }) => {
       <a href="/">About Us</a>
       <a href="/">Contact Us</a>
       <a href="/createlink">Create Link</a>
-      <a href="/signin">Sign In/SignUp</a>
+      <a href="/profile">Profile</a>
+      <a href="/signin">SignUp</a>
     </Ul>
   )
 }
