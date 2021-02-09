@@ -14,9 +14,7 @@ export default function SignIn(props) {
         <Container>
         <br/>
         <Row>
-          <Col>
-            <SignInBox></SignInBox>
-          </Col>
+
           <Col>
             <SignUpBox></SignUpBox>
           </Col>
@@ -26,9 +24,7 @@ export default function SignIn(props) {
         <br/>
         <br/>
 
-        <Row>
 
-        </Row>
         </Container>
         <br/>
         <br/>
