@@ -67,15 +67,10 @@ const Comment = styled.div`
         font-size:100%;
     }
 
-   /* @media (max-width: 1px) {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-  } (not sure if @media will work for intentions)*/
 `;
 
 const element = <FontAwesomeIcon icon={faComment} />
-export const CommentBox1 = (props) => {
+export const MakeComment = (props) => {
     return (
         <Container>
             <Row>
@@ -94,4 +89,4 @@ export const CommentBox1 = (props) => {
         </Container>
     );
     }
-export default CommentBox1;
+export default MakeComment;

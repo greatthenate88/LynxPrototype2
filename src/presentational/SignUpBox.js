@@ -6,27 +6,26 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 
 const SignUpThing = styled.div`
-    .UN {
-        padding-top:10px;
-        padding-right:10px;
-    }
-    .PW {
-        padding-top:10px;
-        padding-right:15px;
-    }
+
     .FormBox1 {
-        background-color:azure;
-        margin-right:15px;
+        background-color:#feffff;
+        margin:0 0 2px 0;
         border-radius:5px;
+        border-style:solid;
+        height:25%;
+        width:75%;
     }
     .FormButton1 {
         justify-content:center;
         border-radius:10px;
-        border-color:lightsteelblue;
+        border-color:#d1efff;
         border-width:.15rem;
         font-size:20px;
-        background-color:azure;
-        padding-bottom:1px;
+        background-color:#feffff;
+        margin:3px 0 0 0;
+    }
+    .FormBox1:focus{
+        
     }
     .SI {
         color:black;
@@ -44,14 +43,16 @@ return (
                 <Col>
 
                     <h1>Sign Up</h1> 
-                    <label className='UN'>Username:</label>
+
                     <input placeholder="Username" className='FormBox1' type='text'></input>
                     <br/>
-                    <label className='PW'>Password:</label>
+
                     <input placeholder="Password" className='FormBox1' type='text'></input>
                     <br/>
+                    <input placeholder="Confirm Password" className='FormBox1' type='text'></input>
                     <br/>
-                    <button className='FormButton1'><a href="/" className="SI">Start Linking!</a></button>
+                    <button className='FormButton1'><a href="/createlink" className="SI">Start Linking!</a></button>
+
 
                 </Col>    
             </Row>    

@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import SearchBox from '../presentational/SearchBox';
 import DNA from '../presentational/DNA';
 import CommentBox1 from '../presentational/CommentBox1';
-import CommentBox2 from '../presentational/CommentBox2';
+import MakeComment from '../presentational/MakeComment';
 import useMTGSDK from '../hooks/useMTGSDK';
 import LinkSearchBox from '../containers/LinkSearchBox';
 

@@ -98,11 +98,6 @@ const Comment = styled.div`
         color:#003a41;
         font-weight:bolder;
     }
-    /*@media (max-width: 1px) {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-    }*/
 `;
 
 const element = <FontAwesomeIcon icon={faCaretUp, faCaretDown} />

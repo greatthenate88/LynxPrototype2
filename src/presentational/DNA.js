@@ -11,7 +11,7 @@ const Link = styled.div`
         color:palevioletred;
         rotate:90deg;
         animation: color-change 7s ease-in infinite;
-        width:110px;
+        width:2rem;
     }
     @keyframes color-change{
         14%{

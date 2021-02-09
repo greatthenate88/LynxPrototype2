@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import {Row, Col, Container, Card} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import CommentBox1 from '../presentational/CommentBox1';
+import ProfilePic from '../presentational/ProfilePic';
+import PW from '../presentational/images/PW.png';
 
 const UserProfile = styled.div`
   .UN{
@@ -51,6 +53,11 @@ const UserProfile = styled.div`
     padding-left:5px;
     text-align:center;
   }
+  .RS{
+    height:130px;
+    width:70px;
+    margin:0px 8px;
+  }
 `;
 
 
@@ -60,8 +67,11 @@ export default function ProfilePage(props) {
         
         <Container>
           <Row>
-            <div className="UN">ElvishPiper420</div>
-            <div className="rating">Rating</div>
+            <div className="UN">
+              <ProfilePic></ProfilePic>
+              ElvishPiper420
+            </div>
+            <div className="rating">Rating:<img className="RS" alt="ratingsymbolimage" src={PW}/></div>
           </Row>
           <Row>
             
@@ -72,14 +82,32 @@ export default function ProfilePage(props) {
               <div className="LI">
                 <div className="LD">2/1/21 (date)</div>
                 <div className="LS">95% (strength)</div>
-                <div className="LR">updoots or rating</div>
+                <div className="LR">+100 (rating)</div>
               </div>
               <div className="UserLinks">
                 Uro x Growth Spiral
               </div>
             </Col>
-            <Col></Col>
-            <Col></Col> 
+            <Col>
+              <div className="LI">
+                <div className="LD">(date)</div>
+                <div className="LS">(strength)</div>
+                <div className="LR">(rating)</div>
+              </div>
+              <div className="UserLinks">
+                Shock x Lightning Bolt
+              </div>
+            </Col>
+            <Col>
+              <div className="LI">
+                <div className="LD">(date)</div>
+                <div className="LS">(strength)</div>
+                <div className="LR">(rating)</div>
+              </div>
+              <div className="UserLinks">
+                Black Lotus x Ancestral Recall
+              </div>
+            </Col> 
           </Row>
           <Row>
             <h1 className="ProfileHeader">Recent Comments</h1>

@@ -4,7 +4,7 @@ import DNA from '../presentational/DNA.js';
 import SearchBox from '../presentational/SearchBox.js';
 import LinkCard from '../presentational/LinkCard';
 import CommentBox1 from '../presentational/CommentBox1';
-import CommentBox2 from '../presentational/CommentBox2';
+import MakeComment from '../presentational/MakeComment';
 import manadrain from '../presentational/images/manadrain.png';
 
 
@@ -68,8 +68,8 @@ return (
             <SearchBox   type="text"
               placeholder="Search"
               value={searchTerm}
-              onChange={handleChange}
-              ></SearchBox>
+              onChange={handleChange}>
+            </SearchBox>
           </Col>
             <DNA></DNA>
           <Col>
@@ -83,10 +83,10 @@ return (
         </Row>
             <br/>
             <Row>
-              <CommentBox1></CommentBox1>
+              <MakeComment></MakeComment>
             </Row>
             <Row>
-                <CommentBox2></CommentBox2>
+              <CommentBox1></CommentBox1>
             </Row>
    
       </Container>

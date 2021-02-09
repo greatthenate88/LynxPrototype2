@@ -50,7 +50,7 @@ return (
                     <input placeholder="Password" className='FormBox1' type='text'></input>
                     <br/>
                     <br/>
-                    <button className='FormButton1'><a href="/" className="SI">Sign In!</a></button>
+                    <button className='FormButton1'><a href="/profile" className="SI">Sign In!</a></button>
                 </form>
                 </Col>    
             </Row>    
