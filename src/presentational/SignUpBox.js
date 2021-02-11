@@ -19,6 +19,8 @@ const SignUpThing = styled.div`
     display:inline-block;
     h1{
         margin-bottom:10px;
+        text-overflow:ellipsis;
+        overflow:hidden;
     }
     .FormBox1 {
         background-color:#feffff;
