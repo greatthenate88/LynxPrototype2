@@ -33,8 +33,8 @@ const UL = styled.ul`
   }
 `;
 
-const RightNav = (initialState, { open }) => {
-//if (initialState) {
+const RightNav = ({ open }) => {
+
   return (
     <UL open={open}>
       <a href="/dashboard">About Us</a>
@@ -43,16 +43,5 @@ const RightNav = (initialState, { open }) => {
     </UL>
   )
 }
-{/*else {  
-  return (
-    <UL open={open}>
-      <a href="/dashboard">About Us</a>
-      <a href="/create">Create Link</a>
-      <a href="/profile">Profile</a>
-      <a href="/signin">Sign Out</a>
-    </UL>
-)
-  }
- }
-  */}
+
 export default RightNav
