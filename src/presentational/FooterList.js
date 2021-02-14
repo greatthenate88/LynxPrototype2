@@ -6,7 +6,7 @@ import ContactUs from './ContactUs'
 const CustomList = styled.ul`
     display:flex;
     list-style:none;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content:space-around;
     padding-top:10px;
 `;

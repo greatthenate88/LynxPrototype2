@@ -16,9 +16,6 @@ a{
     padding:5px;
     z-index:10;
     color:black;
-    &:hover{
-        color:darkslategray;
-        }
 }
   .dropdown{
   position: relative;
@@ -38,11 +35,11 @@ a{
 }
 a:hover{
     transform:scale(1.2);
+    color:darkslategray;
 }
 .dropdown:hover .dropdown-content {
   display: inline-flex;
   color:darkslategray;
-
 }
 `;
 
