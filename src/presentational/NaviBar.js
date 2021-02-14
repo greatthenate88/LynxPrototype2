@@ -25,11 +25,11 @@ const LynxLogo = styled.a`
 
 `;
 
-const Navibar = () => {
+const NaviBar = () => {
   return (
     <Nav>
       <div className="logo">
-        <LynxLogo href='/'>
+        <LynxLogo href='/dashboard'>
         <img src={lynx} alt="temp lynx logo" height='69px' width='69px'/>
         </LynxLogo>
       </div>
@@ -38,4 +38,4 @@ const Navibar = () => {
   )
 }
 
-export default Navibar
+export default NaviBar

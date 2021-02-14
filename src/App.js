@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from './pages/Home';
-import SignIn from './pages/SignIn';
+
 import LinkCreation from './pages/LinkCreation';
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import Navibar from './presentational/NaviBar';
@@ -44,7 +44,7 @@ function App() {
 					))}
 				</Switch>
 			</Router>
-		</AuthProvider>
+</AuthProvider>
 
     </div>
   );

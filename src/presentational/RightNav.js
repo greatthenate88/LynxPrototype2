@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { initialState } from '../Context/reducer';
 
-const Ul = styled.ul`
+const UL = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -32,16 +33,26 @@ const Ul = styled.ul`
   }
 `;
 
-const RightNav = ({ open }) => {
+const RightNav = (initialState, { open }) => {
+//if (initialState) {
   return (
-    <Ul open={open}>
-      <a href="/">About Us</a>
-      <a href="/">Contact Us</a>
-      <a href="/createlink">Create Link</a>
-      <a href="/profile">Profile</a>
-      <a href="/signin">SignUp</a>
-    </Ul>
+    <UL open={open}>
+      <a href="/dashboard">About Us</a>
+      <a href="/create">Create Link</a>
+      <a href="/signin">Sign In</a>
+    </UL>
   )
 }
-
+{/*else {  
+  return (
+    <UL open={open}>
+      <a href="/dashboard">About Us</a>
+      <a href="/create">Create Link</a>
+      <a href="/profile">Profile</a>
+      <a href="/signin">Sign Out</a>
+    </UL>
+)
+  }
+ }
+  */}
 export default RightNav

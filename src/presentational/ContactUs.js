@@ -46,7 +46,7 @@ a:hover{
 }
 `;
 
-const element = <FontAwesomeIcon icon={faFacebook} />
+
 
 export const ContactUs = (props) => {
     return (

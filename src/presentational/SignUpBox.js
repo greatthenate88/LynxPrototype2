@@ -3,10 +3,6 @@ import styled from 'styled-components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 
-
-
-
-
 const SignUpThing = styled.div`
     border-style:solid;
     border-color:lightgrey;
@@ -14,9 +10,10 @@ const SignUpThing = styled.div`
     border-radius:7px;
     box-shadow:1px 1px 5px #efffff;
     height:100%;
-    width:50%;
+    width:85%;
     padding:20px;
     display:inline-block;
+    margin:auto;
     h1{
         margin-bottom:10px;
         text-overflow:ellipsis;
@@ -73,8 +70,8 @@ const SignUpThing = styled.div`
 
 
 
-function myFunction() {
-    var x = document.getElementById("myInput");
+function myReveal() {
+    var x = document.getElementById("myNewPW");
     if (x.type === "password") {
       x.type = "text";
     } else {
@@ -94,7 +91,7 @@ function myFunction() {
         count = 0;
     }
 }
-export const SignInBox = (props) => {
+export const SignUpBox = (props) => {
 
 return (
 
@@ -104,14 +101,14 @@ return (
                 <br/>
             <input placeholder="Username" className='FormBox1' type='text'/>
                 <br/>
-            <input placeholder="Password" className='FormBox1' type='password' id="myInput"/>
-            <div id="PWView" className="reveal"  onClick={()=> setColor('PWView', '#005e74')}>
-                <FontAwesomeIcon onClick={() => myFunction()} icon={faEye}/>
+            <input placeholder="Password" className='FormBox1' type='password' id="myNewPW"/>
+            <div id="NewPWView" className="reveal"  onClick={()=> setColor('NewPWView', '#005e74')}>
+                <FontAwesomeIcon onClick={() => myReveal()} icon={faEye}/>
             </div>
                 <br/>
-            <button className='FormButton1'><a href="/createlink" className="SI">Start Linking!</a></button>
+            <button className='FormButton1'><a href="/create" className="SI">Start Linking!</a></button>
         </SignUpThing>
 
   );
 }
-export default SignInBox;
+export default SignUpBox;

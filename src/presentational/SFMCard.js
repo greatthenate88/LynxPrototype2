@@ -74,7 +74,7 @@ export const SFMCard = (props) => {
     return (
     
 
-      <SFM href="/">  
+      <SFM href="/dashboard">  
         <Card>
 
           <img alt="sfmimg" src={sfm} className="image"/>

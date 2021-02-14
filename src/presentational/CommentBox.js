@@ -103,7 +103,7 @@ const Comment = styled.div`
 const element = <FontAwesomeIcon icon={faCaretUp, faCaretDown} />
 
 
-export const CommentBox1 = (props) => {
+export const CommentBox = (props) => {
     const [count, setCount] = useState(0);
     return (
         <Container>
@@ -115,7 +115,7 @@ export const CommentBox1 = (props) => {
                     <div className="count">{count}</div>
                     <button className="down" type="submit" onClick={() => setCount(count-1)}><FontAwesomeIcon icon={faCaretDown}/></button>
                 </div>
-                <div className="UN"><a href="/Links">ElvishPiper420</a>
+                <div className="UN"><a href="/create">ElvishPiper420</a>
                 <img alt="profilepic" src={FABULOUS}/>
                 </div>
             </div>
@@ -128,4 +128,4 @@ export const CommentBox1 = (props) => {
         </Container>
     );
     }
-export default CommentBox1;
+export default CommentBox;

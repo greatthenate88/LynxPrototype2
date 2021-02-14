@@ -1,6 +1,5 @@
 import React, {useState}  from 'react';
 import styled from 'styled-components';
-import {Container, Row, Col} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 
@@ -13,11 +12,15 @@ const SignInThing = styled.div`
     border-radius:7px;
     box-shadow:1px 1px 5px #efffff;
     height:100%;
-    width:50%;
+    width:85%;
     padding:20px;
     display:inline-block;
+    margin:auto;
     h1{
         margin-bottom:10px;
+        text-overflow:ellipsis;
+        overflow:hidden;
+        padding:2px;
     }
     .FormBox1 {
         background-color:#feffff;
@@ -95,7 +98,7 @@ return (
     
 
             <SignInThing>
-            <h1>Welcome Back!</h1>           
+            <h1>Sign Back In</h1>           
                 <br/>
             <input placeholder="Username" className='FormBox1' type='text'/>
                 <br/>
@@ -104,7 +107,7 @@ return (
                 <FontAwesomeIcon onClick={() => myFunction()} icon={faEye}/>
             </div>
                 <br/>
-            <button className='FormButton1'><a href="/createlink" className="SI">Sign In!</a></button>
+            <button className='FormButton1'><a href="/create" className="SI">Sign In!</a></button>
             </SignInThing>
 
     

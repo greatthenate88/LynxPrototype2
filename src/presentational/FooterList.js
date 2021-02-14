@@ -27,7 +27,7 @@ export const FooterList = (props) => {
     
         <CustomList>
             <ContactUs/>
-            <RandoListPart href='/Links'>Shop and Buylist</RandoListPart>
+            <RandoListPart href='/create'>Shop and Buylist</RandoListPart>
             <RandoListPart href='https://www.patreon.com/' target="_blank" rel="noreferrer">Donate and Participate</RandoListPart>
         </CustomList>
 

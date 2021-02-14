@@ -3,9 +3,8 @@ import {Container, Row, Col} from 'react-bootstrap';
 import DNA from '../presentational/DNA.js';
 import SearchBox from '../presentational/SearchBox.js';
 import LinkCard from '../presentational/LinkCard';
-import CommentBox1 from '../presentational/CommentBox1';
+import CommentBox1 from '../presentational/CommentBox';
 import MakeComment from '../presentational/MakeComment';
-import manadrain from '../presentational/images/manadrain.png';
 
 
 
@@ -83,6 +82,7 @@ return (
         </Row>
             <br/>
             <Row>
+               {/*<CommentSection></CommentSection>*/}
               <MakeComment></MakeComment>
             </Row>
             <Row>

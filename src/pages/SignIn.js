@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row, Col, Container, Card, Carousel} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import NaviBar from '../presentational/NaviBar';
 import Footer from '../presentational/Footer';
@@ -7,26 +7,23 @@ import SignInBox from '../presentational/SignInBox';
 import SignUpBox from '../presentational/SignUpBox';
 
 
+
 export default function SignIn(props) {
   return (
     <div>
-        
-        <Container>
+      <NaviBar></NaviBar>
         <br/>
         <br/>
-        <Row>
-
-          <Col>
-            <SignUpBox></SignUpBox>
-          </Col>
-        </Row>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
-
-        </Container>
+          <Container>
+            <Row>
+              <Col>
+                <SignInBox></SignInBox>
+              </Col>
+              <Col>
+                <SignUpBox></SignUpBox>
+              </Col>
+            </Row>
+          </Container>
         <br/>
         <br/>
         <br/>
@@ -37,7 +34,10 @@ export default function SignIn(props) {
         <br/>
         <br/>
         <br/>
-
+        <br/>
+        <br/>
+        <br/>
+      <Footer></Footer>
     </div>
   );
 }

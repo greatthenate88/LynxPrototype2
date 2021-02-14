@@ -1,7 +1,4 @@
 import React from 'react';
-//import Login from '../Pages/Login';
-////import Dashboard from '../Pages/Dashboard';
-//import NotFound from '../Pages/NotFound';
 import ProfilePage from '../pages/ProfilePage';
 import Home from '../pages/Home'
 import SignIn from '../pages/SignIn';
@@ -19,11 +16,26 @@ const routes = [
 	{
 		path: '/dashboard',
 		component: Home,
+		isPrivate: false,
+	},
+	{
+		path: '/dashboard',
+		component: Home,
 		isPrivate: true,
 	},
 	{
-		path: '/*',
-		component: Home,
+		path: '/profile',
+		component: ProfilePage,
+		isPrivate: true,
+	},
+	{
+		path: '/create',
+		component: LinkCreation,
+		isPrivate: false,
+	},
+	{
+		path: '/create',
+		component: LinkCreation,
 		isPrivate: true,
 	},
 ];
