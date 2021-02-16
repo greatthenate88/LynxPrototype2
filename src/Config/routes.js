@@ -23,10 +23,11 @@ const routes = [
 		component: Home,
 		isPrivate: true,
 	},
+
 	{
 		path: '/profile',
 		component: ProfilePage,
-		isPrivate: true,
+		isPrivate: false,
 	},
 	{
 		path: '/create',

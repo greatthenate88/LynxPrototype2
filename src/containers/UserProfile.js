@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import CommentBox1 from '../presentational/CommentBox';
 import ProfilePic from '../presentational/ProfilePic';
 import PW from '../presentational/images/PW.png';
+import StaticLink from '../presentational/StaticLink';
 
 const UP = styled.div`
   .UN{
@@ -13,6 +14,9 @@ const UP = styled.div`
   }
   .rating{
     margin:auto;
+    font-size:1.2rem;
+    font-weight:bold;
+    display:block;
   }
   .UserLinks{
     width:100%;
@@ -56,7 +60,7 @@ const UP = styled.div`
   .RS{
     height:130px;
     width:70px;
-    margin:0px 8px;
+    margin:0px 10px;
   }
 `;
 
@@ -71,7 +75,7 @@ export const UserProfile = (props) => {
     <ProfilePic></ProfilePic>
     ElvishPiper420
   </div>
-  <div className="rating">Rating:<img className="RS" alt="ratingsymbolimage" src={PW}/></div>
+  <div className="rating"><img className="RS" alt="ratingsymbolimage" src={PW}/><br/>Common (user rank)</div>
 </Row>
 <Row>
   
@@ -79,14 +83,7 @@ export const UserProfile = (props) => {
 </Row>
 <Row>
   <Col> 
-    <div className="LI">
-      <div className="LD">2/1/21 (date)</div>
-      <div className="LS">95% (strength)</div>
-      <div className="LR">+100 (rating)</div>
-    </div>
-    <div className="UserLinks">
-      Uro x Growth Spiral
-    </div>
+    <StaticLink></StaticLink>
   </Col>
   <Col>
     <div className="LI">

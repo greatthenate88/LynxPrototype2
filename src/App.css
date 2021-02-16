@@ -24,7 +24,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.LI{
+  border-bottom:solid 1px;
+  margin-bottom:1px;
+}
 .App-link {
   color: #61dafb;
 }

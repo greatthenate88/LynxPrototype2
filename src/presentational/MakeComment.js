@@ -30,7 +30,7 @@ const Comment = styled.div`
         width:80%;
         text-align:left;
         padding:3px;
-        margin-top:30px;
+        margin-top:15px;
     }
     .UN{
         display:inline-block;        
@@ -69,7 +69,7 @@ const Comment = styled.div`
 
 `;
 
-const element = <FontAwesomeIcon icon={faComment} />
+
 export const MakeComment = (props) => {
     return (
         <Container>

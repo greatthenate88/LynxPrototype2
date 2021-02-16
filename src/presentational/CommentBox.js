@@ -17,6 +17,7 @@ const Comment = styled.div`
     margin-right:auto;
     margin-left:auto;
     margin-bottom:1rem;
+    display:inline-flex;
     a{
         color:black;
     }
@@ -37,7 +38,6 @@ const Comment = styled.div`
         width:80%;
         text-align:left;
         padding:10px;
-        margin-top:30px;
     }
     .UN{
         display:inline-block;        
@@ -100,7 +100,6 @@ const Comment = styled.div`
     }
 `;
 
-const element = <FontAwesomeIcon icon={faCaretUp, faCaretDown} />
 
 
 export const CommentBox = (props) => {
