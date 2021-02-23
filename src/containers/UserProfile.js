@@ -1,14 +1,24 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import {Row, Col, Container} from 'react-bootstrap';
+import {Row, Col, Container, Card} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import CommentBox1 from '../presentational/CommentBox';
 import ProfilePic from '../presentational/ProfilePic';
 import PW from '../presentational/images/PW.png';
 import StaticLink from '../presentational/StaticLink';
+import LinkDescription from '../presentational/LinkDescription';
 
 const UP = styled.div`
+  .ProfileHeader{
+    width:25rem;
+    border-style:dashed;
+    border-width:1px;
+    border-radius:2px;
+    border-color:black;
+    margin:auto;
+    padding:10px;
+  }
   .UN{
     margin:auto;
   }
@@ -17,6 +27,8 @@ const UP = styled.div`
     font-size:1.2rem;
     font-weight:bold;
     display:block;
+    position:relative;
+    top:5px;
   }
   .UserLinks{
     width:100%;
@@ -27,7 +39,7 @@ const UP = styled.div`
     padding-left:5px;
     padding-right:5px;
   }
-  .ProfileHeader{
+  .SubHeader{
     font-size:2rem;
     border-style:none none double none;
     border-width:1px;
@@ -35,6 +47,8 @@ const UP = styled.div`
   .LI{
     display:flex;
     width:100%;
+    border-bottom:solid 1px;
+    margin-bottom:1px;
   }
   .LD{
     width:50%;
@@ -71,43 +85,38 @@ export const UserProfile = (props) => {
 <UP>
 <Container>
 <Row>
-  <div className="UN">
-    <ProfilePic></ProfilePic>
-    ElvishPiper420
+  <div className="ProfileHeader">
+    <div className="UN">
+      <ProfilePic></ProfilePic>
+      ElvishPiper420
+    </div>
+    <div className="rating"><img className="RS" alt="ratingsymbolimage" src={PW}/><br/>Common (user rank)</div>
   </div>
-  <div className="rating"><img className="RS" alt="ratingsymbolimage" src={PW}/><br/>Common (user rank)</div>
 </Row>
-<Row>
-  
-  <h1 className="ProfileHeader">Recent Links</h1>
+<br/>
+<Row>  
+  <h1 className="SubHeader">Recent Links</h1>
 </Row>
 <Row>
   <Col> 
     <StaticLink></StaticLink>
   </Col>
   <Col>
-    <div className="LI">
-      <div className="LD">(date)</div>
-      <div className="LS">(strength)</div>
-      <div className="LR">(rating)</div>
-    </div>
     <div className="UserLinks">
       Shock x Lightning Bolt
     </div>
+    <LinkDescription></LinkDescription>
   </Col>
   <Col>
-    <div className="LI">
-      <div className="LD">(date)</div>
-      <div className="LS">(strength)</div>
-      <div className="LR">(rating)</div>
-    </div>
     <div className="UserLinks">
       Black Lotus x Ancestral Recall
     </div>
+    <LinkDescription></LinkDescription>
   </Col> 
 </Row>
+<br/>
 <Row>
-  <h1 className="ProfileHeader">Recent Comments</h1>
+  <h1 className="SubHeader">Recent Comments</h1>
   <CommentBox1></CommentBox1>
 </Row>
 </Container>

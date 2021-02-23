@@ -1,15 +1,15 @@
 import React, {useState, useEffect}  from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
-import styled from 'styled-components';
+import {Container, Row, Col, Card} from 'react-bootstrap';
 import DNA from '../presentational/DNA.js';
 import LinkCard from '../presentational/LinkCard';
+import LinkDescription from './LinkDescription.js';
 
 
 export const StaticLink = (props) => {
 
 
-       const [searchTerm, setSearchTerm] = React.useState("Black Lotus");
-       const [searchTerm2, setSearchTerm2] = React.useState("Shock");
+       const [searchTerm, setSearchTerm] = React.useState("Sphinx of the Second Sun");
+       const [searchTerm2, setSearchTerm2] = React.useState("Mana Drain");
        const [searchResults, setSearchResults] = React.useState([]);
        const [currentImage, setCurrentImage] = useState("");
        const [currentImage2, setCurrentImage2] = useState("");
@@ -48,15 +48,8 @@ export const StaticLink = (props) => {
         }, [searchTerm2]);
 
 return (
-    
+    <Card>
      <Container>
-        <Row>
-                <div className="LI">
-                    <div className="LD">2/1/21</div>
-                    <div className="LS">95%</div>
-                    <div className="LR">+420</div>
-                </div>
-        </Row>
         <Row>
             <Col>
                 <LinkCard id="box1" image={currentImage}></LinkCard>
@@ -66,9 +59,12 @@ return (
                 <LinkCard id="box2" image={currentImage2}></LinkCard>
             </Col>
         </Row>
+        <Row>
+            <LinkDescription></LinkDescription>
+        </Row>
         <br/>
       </Container>
-    
+    </Card>
   );
 }
 export default StaticLink;

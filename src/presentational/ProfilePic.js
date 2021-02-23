@@ -10,15 +10,16 @@ const PP = styled.a`
 border-width:0px;
 color:black;
 position:sticky;
-margin-right:2rem;
+margin:1rem;
+
 :visited{
   color:slateblue;
 }
 
 .image{
   opacity:1;
-  height:200px;
-  width:200px;
+  height:150px;
+  width:150px;
   border-radius:50%;
   position:sticky;
 }

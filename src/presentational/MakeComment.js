@@ -6,12 +6,10 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faComment} from '@fortawesome/free-solid-svg-icons';
 
 const Comment = styled.div`
-    border-width:1px;
-    border-style:none none double none;
-    border-color:#008d8e;
+
     padding-top:5px;
     padding-bottom:2px;
-    width:90%;
+    width:80%;
     margin-top:auto;
     margin-right:auto;
     margin-left:auto;
@@ -23,10 +21,19 @@ const Comment = styled.div`
         padding-left:5px;
         display:flex;
     }
+    a{
+        color:black;
+    }
+    a:hover{
+    color:#003a41;
+    }
     .words{
+        border-width:1px;
+        border-style:none none double none;
+        border-color:#008d8e;
         display:flex;
         background-color:#e8f4ff;
-        border-radius:5px;
+        border-radius:5px 5px 0px 0px;
         width:80%;
         text-align:left;
         padding:3px;
@@ -76,7 +83,7 @@ export const MakeComment = (props) => {
             <Row>
         <Comment>
             <div className="title">
-                <div className="UN">ICantBlockWarriors
+                <div className="UN"><a href="/profile">ICantBlockWarriors</a>
                 <img alt="profilepic" src={sfm}/>
                 </div>
             </div>
